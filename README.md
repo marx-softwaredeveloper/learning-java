@@ -6,16 +6,17 @@ Os códigos estão organizados de acordo com os temas abordados durante os estud
 
 ## Fundamentos
 
-- [Estrutura Básica]() 
-- [Tipo de Dados]()
-- [Tipo String]()
-- [Variáveis]()
-- [Conversão de Tipos (casting)]()
-- [Entrada de Dados]()
-- [Saída de Dados]()
-- [Operadores Aritméticos]()
-- [Operadores Lógicos]()
+- [Estrutura Básica](/src/modulo1_fundamentos/EstruturaBasica.java) 
+- [Tipo de Dados](/src/modulo1_fundamentos/DataTypes.java)
+- [Tipo String](/src/modulo1_fundamentos/DataTypeString.java)
+- [Variáveis](/src/modulo1_fundamentos/Variaveis.java)
+- [Conversão de Tipos (casting)](/src/modulo1_fundamentos/Casting.java)
+- [Entrada de Dados](/src/modulo1_fundamentos/EntradaDados.java)
+- [Saída de Dados](/src/modulo1_fundamentos/SaidaDados.java)
+- [Operadores Aritméticos](/src/modulo1_fundamentos/OperadoresAritmeticos.java)
+- [Operadores Lógicos](/src/modulo1_fundamentos/OperadoresLogicos.java)
 - [Operadores Relacionais]()
+- [Operadores Unários]()
 - [Operador Ternário]()
 
 ## Estruturas de Controle
