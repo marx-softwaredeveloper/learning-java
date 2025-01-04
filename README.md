@@ -15,9 +15,8 @@ Os códigos estão organizados de acordo com os temas abordados durante os estud
 - [Saída de Dados](/src/modulo1_fundamentos/SaidaDados.java)
 - [Operadores Aritméticos](/src/modulo1_fundamentos/OperadoresAritmeticos.java)
 - [Operadores Lógicos](/src/modulo1_fundamentos/OperadoresLogicos.java)
-- [Operadores Relacionais]()
-- [Operadores Unários]()
-- [Operador Ternário]()
+- [Operadores Relacionais](/src/modulo1_fundamentos/OperadoresRelacionais.java)
+- [Operador Ternário](/src/modulo1_fundamentos/OperadorTernario.java)
 
 ## Estruturas de Controle
 
