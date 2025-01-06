@@ -58,14 +58,22 @@ public class SistemaGerenciamentoPedidos {
             if (quantidade <= 0) {
                 System.out.print("\nQuantidade inválida. Por favor, insira um número positivo.\n");
                 continue;
-            }           
+            }
             
+            System.out.printf("%n%d x %s adicionado ao pedido.%n", quantidade, menu[escolha - 1]);
+            
+
+            // Adicionar ao total
+            double subtotal = valor[escolha - 1] * quantidade;
+            totalPedido += subtotal;
+
+                    
             // Perguntando se deseja adicionar mais itens.
             System.out.print("\nDeseja acrescentar mais itens ao seu pedido? (sim/nao): ");
             String adicionarItem = scanner.next().toLowerCase();
             
             if(adicionarItem.equals("nao")) {
-            	
+            	System.out.printf("%nSubtotal: R$ %.2f%n", totalPedido);
             	break;
             } else {
             	continue;
