@@ -38,13 +38,32 @@ public class SistemaGerenciamentoPedidos {
 		
 		// Entrada de dados para o pedido
 		while (continuar) {
-			System.out.print("\nDigite o número do item que deseja adicionar ao pedido (ou 0 para finalizar): ");
-            escolha = scanner.nextInt();
+			if (escolha < 1) {
+				System.out.print("\nDigite o número do item que deseja adicionar ao pedido: ");
+	            escolha = scanner.nextInt();
+			} else {
+				System.out.print("\nDigite o número do item que deseja adicionar ao pedido (ou 0 para finalizar): ");
+	            escolha = scanner.nextInt();
+			}
 
             if (escolha == 0) {
             	System.out.print("\nPedido finalizado.\n");
+            	System.out.printf("%nSubtotal: R$ %.2f%n", totalPedido);
+
+            	System.out.print("\nDeseja pagar a taxa de serviço de 10%? (sim/nao): ");
+    			String taxaServico = scanner.next().toLowerCase();
+    			
+    			if(taxaServico.equals("sim")) {
+    				totalPedido *= 1.10;
+    				System.out.print("\nTaxa de serviço adicionada.");
+    			}
+    			
+    			// Exibindo o total final.
+    			System.out.printf("%nTotal do pedido: R$ %.2f%n", totalPedido);
+    			System.out.println();
+    			System.out.printf("Obrigado por pedir no Restaurante Java!");
                 break; // Encerra o loop se o usuário quiser finalizar
-            }
+            } 
 
             if (escolha < 1 || escolha > menu.length) {
                 System.out.print("\nOpção inválida. Vamo tentar novamente.\n");
@@ -52,7 +71,7 @@ public class SistemaGerenciamentoPedidos {
             }
 
             // Obter a quantidade
-            System.out.printf("Quantas unidades de %s você deseja? ", menu[escolha - 1]);
+            System.out.printf("%nQuantas unidades de %s você deseja? ", menu[escolha - 1]);
             int quantidade = scanner.nextInt();
 
             if (quantidade <= 0) {
@@ -82,7 +101,7 @@ public class SistemaGerenciamentoPedidos {
 		
 		// Perguntando sobre a taxa de serviço.
 		if (escolha == 0) {
-			System.out.printf("Volte sempre!");
+			System.out.printf("\n\nVolte sempre!");
 		} else {
 			System.out.print("\nDeseja pagar a taxa de serviço de 10%? (sim/nao): ");
 			String taxaServico = scanner.next().toLowerCase();
