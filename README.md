@@ -57,7 +57,7 @@ Os códigos estão organizados de acordo com os temas abordados durante os estud
 
 ## Exercícios Práticos
 
-- [Fundamentos]()
+- [Sistema de Gerenciamentos de Pedidos](/src/exercicios/SistemaGerenciamentoPedidos.java)
 
 
 
