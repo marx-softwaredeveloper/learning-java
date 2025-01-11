@@ -23,9 +23,10 @@ Os códigos estão organizados de acordo com os temas abordados durante os estud
 - [Condicionais (if, else, switch)](/src/modulo2_estruturas_de_controle/EstruturasCondicionais.java)
 - [Loops (for, forEach, while e do-while)](/src/modulo2_estruturas_de_controle/EstruturasRepeticao.java)
 
-## Funções e Métodos
+## Classes e Métodos
 
-
+- [Introdução à Classes](/src/modulo3_classe_e_metodos/IntroducaoClasse.java)
+- [Introdução à Métodos](/src/modulo3_classe_e_metodos/IntroducaoMetodos.java)
 
 ## Estruturas de Dados e APIs Java
 
